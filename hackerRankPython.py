@@ -37,3 +37,30 @@ print(a * b)
 
 print(a//b)
 print(a/b)
+
+# 30-DEC-2020
+
+# The provided code stub reads an integer, n, from STDIN. For all non-negative integers i < n, print i^2.
+    
+if n >= 0:
+    for i in range(n):
+        print(i * i)
+
+# Given a year, determine whether it is a leap year. If it is a leap year, return the Boolean True, otherwise return False.
+# Note that the code stub provided reads from STDIN and passes arguments to the is_leap function. It is only necessary to complete the is_leap function.
+
+def is_leap(year):
+    leap = False
+    
+    if(year % 4 == 0 and year % 100 > 0):
+        leap = True
+    else:
+        if (year % 100 == 0 and year % 400 == 0):
+            leap = True
+    
+    return leap
+
+# Print the list of integers from 1 through n as a string, without spaces.
+
+for i in range(n):
+    print(i + 1, end="")
